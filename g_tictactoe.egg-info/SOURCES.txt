@@ -1,7 +1,7 @@
 README.md
 setup.py
 g_tictactoe/__init__.py
-g_tictactoe/g_tictactoe.py
+g_tictactoe/env.py
 g_tictactoe.egg-info/PKG-INFO
 g_tictactoe.egg-info/SOURCES.txt
 g_tictactoe.egg-info/dependency_links.txt
