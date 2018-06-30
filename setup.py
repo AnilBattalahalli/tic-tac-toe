@@ -4,7 +4,7 @@ with open("README.md", "r") as fh:
     long_description = fh.read()
 
 setuptools.setup(
-    name="g-tictactoe",
+    name="g_tictactoe",
     version="0.0.1",
     author="Anil Battalahalli",
     author_email="anil.battalahalli@gmail.com",
