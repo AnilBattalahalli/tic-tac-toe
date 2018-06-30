@@ -4,7 +4,7 @@
 
 **1) Setup the board:**
 
-    from tictactoe import board #import board object
+    from g-tictactoe import board #import board object
     b = board(5) #initialize a 5x5 board for the game
 
 **2) Playing:**
