@@ -5,7 +5,7 @@ with open("README.md", "r") as fh:
 
 setuptools.setup(
     name="g_tictactoe",
-    version="1.0.1",
+    version="1.0.2",
     author="Anil Battalahalli",
     author_email="anil.battalahalli@gmail.com",
     description="A Generic NxN TicTacToe Library",
