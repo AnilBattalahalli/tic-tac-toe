@@ -1,0 +1,12 @@
+Metadata-Version: 1.1
+Name: g-tictactoe
+Version: 0.0.1
+Summary: A Generic NxN TicTacToe Library
+Home-page: https://github.com/AnilBattalahalli/tic-tac-toe/
+Author: Anil Battalahalli
+Author-email: anil.battalahalli@gmail.com
+License: UNKNOWN
+Description: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: Operating System :: OS Independent
