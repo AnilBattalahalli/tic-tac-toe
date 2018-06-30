@@ -1,5 +1,5 @@
-# Generic Tie Tac Toe library
-**Python library for implementing any NxN Tic Tac Toe game**
+# Generic Tie-Tac-Toe library
+**Python library for implementing any NxN Tic-Tac-Toe game**
 ### Usage:
 
 **1) Setup the board:**
