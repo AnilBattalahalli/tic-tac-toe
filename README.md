@@ -13,7 +13,7 @@
 
 **Example:**
 
-    b.step(0,1,0) #Puts an 0 at the position (1,0)
+    b.step(0,1,0) 	#Puts a 0 at the position (1,0)
 Step returns the flag of last move and current state of the board.
 Flag is PlayID for win, -1 for no termination and -2 for draw. State of the board is NxN list of current board state.
 
