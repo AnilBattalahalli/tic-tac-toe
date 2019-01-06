@@ -22,6 +22,7 @@ Flag is PlayID for win, -1 for no termination and -2 for draw. State of the boar
 
     b.printState()
 This function prints the existing state of the board.
+
 **Example:**
 
     - - - O
