@@ -1,0 +1,8 @@
+README.md
+setup.py
+GenericTictactoe.egg-info/PKG-INFO
+GenericTictactoe.egg-info/SOURCES.txt
+GenericTictactoe.egg-info/dependency_links.txt
+GenericTictactoe.egg-info/top_level.txt
+gttt/__init__.py
+gttt/env.py

@@ -1,25 +1,18 @@
 class board:
-
+    
     def __init__(self,bdim):
         bd=[]
         self.bdim=bdim
         for i in range(0,bdim): bd.append(['-']*bdim)
         self.brd=bd
 
-    def printState(self):
-        for i in range(0,self.bdim):
-            print(' '.join(self.brd[i]))
+    def checkDraw(self):
+        for i in self.brd:
+            if '-' in i:
+                return 1
+        return 0
 
-    def getState(self):
-        return(self.brd)
-
-    def put(self,plyID,x,y):
-        if plyID == 1:
-            self.brd[x][y]='X'
-        elif plyID == 0:
-            self.brd[x][y]='O'
-
-    def checkWin(self):
+    def checkTerm(self):
         #checkRow
         for x in range(0,self.bdim):
             score = 0
@@ -30,7 +23,7 @@ class board:
                 if self.brd[x][y] == ini:
                     score = score+1
             if score == self.bdim:
-                return 1,ini
+                return ini
         #checkColumn
         for y in range(0,self.bdim):
             score = 0
@@ -41,7 +34,7 @@ class board:
                 if self.brd[x][y] == ini:
                     score = score+1
             if score == self.bdim:
-                return 1,ini
+                return ini
         #checkDiagonals
         score=0
         ini = self.brd[0][0]
@@ -50,7 +43,7 @@ class board:
                 if ini == self.brd[i][i]:
                     score = score+1
         if score == self.bdim:
-            return 1,ini
+            return ini
 
         score=0
         ini = self.brd[0][self.bdim-1]
@@ -59,13 +52,18 @@ class board:
                 if ini == self.brd[i][self.bdim-i-1]:
                     score = score+1
         if score == self.bdim:
-            return 1,ini
-       
-        return -1,0
-       
-       
-    def resetBoard(self):
-        bdim = self.bdim
-        bd = []
-        for i in range(0,bdim): bd.append(['-']*bdim)
-        self.brd=bd
+            return ini
+        if self.checkDraw() == 1:
+            return -1
+        else:
+            return -2
+
+    def step(self,plyID,x,y):
+        if self.brd[x][y] == '-':
+            self.brd[x][y] = plyID
+            r = self.checkTerm()
+            return r,self.brd
+
+    def printState(self):
+        for i in self.brd:
+            print(i)
